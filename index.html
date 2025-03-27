@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!--link to CSS file-->
+        <title>Advice finder</title>
+    </head>
+    <body>
+        <header>
+            <h1>Free Daily Advice</h1>
+        </header>
+        <!--main-->
+        <main>
+            <p>
+                <strong class="dailydose">Your daily dose of advice</strong>
+            </p>
+
+            <p>
+                Sometimes nothing makes sense and we have to look at life from a different perspective.<br>
+                we face different challenges and we have no one to advice us. <br>
+                Here you'll get brief advice based on the challenge you are facing and the advice you are looking for.
+            </p>
+        </main>
+        <div>
+            <p><strong>Word of the Day:</strong> Money buys Happiness</p> <br>
+             <!--user searches for advice-->
+            <form class="adviceForm">
+                
+            <label for="advice">Advice:</label>
+            <input type="text" id="advice" name="advice" placeholder="search for advice">
+            <br>
+
+            <br>
+            <button type="submit" id="get-advice">Get Advice</button>
+            </form>
+
+          
+        </div>
+
+        <div class="card">
+            <h1 class="adviceDisplay">Advice</h1>
+            <p class="adviceEmoji">❤❤❤</p>
+            <p class="descDisplay">Today is a new day</p>
+            <p class="errorDisplay">Please enter a keyword</p>
+
+        </div>
+         
+        <!--user adds their advice-->
+        <div class="addAdviceContainer">
+            <h2>Add Your Own Advice</h2>
+            <form class="addAdviceForm">
+                <label for="new-new-advice">Your Advice:</label>
+                <input type="text" id="new-advice" name="new-advice" placeholder="write your advice" required>
+                <br><br>
+                <button type="submit">Add Advice</button>
+
+            </form>
+
+        </div>
+
+        <script src="index.js"></script> <!--link to javascript file-->
+
+    </body>
+
+</html>

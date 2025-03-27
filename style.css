@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(210, 100%, 75%);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.dailydose{
+    align-items: center;
+}
+.card{
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.5);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.adviceDisplay{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.adviceEmoji{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.errorDisplay{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%, 0.75);
+}
