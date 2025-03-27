@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        fetch("http://localhost:3000/advice")
+        fetch("https://advice-finder.onrender.com/advice")
             .then((res) => res.json())
             .then((data) => {
                 const adviceList = data;
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const adviceData = { advice: newAdvice };
 
-        fetch("http://localhost:3000/advice", {
+        fetch("https://advice-finder.onrender.com/advice", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     });
 
-    // Delete Advice (DELETE) 
+    // Deletes Advice (DELETE) 
     function showDeleteButton(adviceId) {
         let deleteBtn = document.getElementById("delete-advice");
         if (!deleteBtn) {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         deleteBtn.onclick = () => {
-            fetch(`http://localhost:3000/advice/${adviceId}`, {
+            fetch(`https://advice-finder.onrender.com/advice/${adviceId}`, {
                 method: "DELETE",
             })
                 .then(() => {
