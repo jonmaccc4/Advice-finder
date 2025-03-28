@@ -18,3 +18,6 @@ README.md  => Project documentation
 Html
 CSS
 JavaScript
+
+## LINK BELOW TO WATCH HOW IT FUNCTIONS
+https://youtu.be/5wfo8C-qzUY?si=Fb5qQyXDJOYGAZMS
